@@ -41,3 +41,5 @@ Set these Cloudflare records to **DNS only** at first. GitHub may take a little 
 ## Content notes
 
 The group meets every Tuesday from 7pm to 11pm upstairs at The Brown Cow, Selby Road, Whitkirk, Leeds LS15 7AY. Facebook remains the source of truth for last-minute updates, special events and RSVPs.
+
+The current imagery uses local table-focused photos saved under `assets/photos/` from ELBG Facebook media. If different member photos are preferred, replace those files and keep the same filenames.
