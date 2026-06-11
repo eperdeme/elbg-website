@@ -48,10 +48,10 @@
         <a href="#first-time">First Time?</a>
         <a href="#play">What We Play</a>
         <a href="#find-us">Find Us</a>
-        <a class="mobile-nav-cta" href="https://www.facebook.com/groups/950975131702269" rel="noreferrer">Join Group</a>
+        <a class="mobile-nav-cta" href="https://www.facebook.com/groups/950975131702269" rel="noreferrer" data-analytics-event="join_facebook" data-analytics-category="conversion" data-analytics-label="Mobile nav">Join Group</a>
       </nav>
 
-      <a class="header-cta" href="https://www.facebook.com/groups/950975131702269" rel="noreferrer">Join Facebook Group</a>
+      <a class="header-cta" href="https://www.facebook.com/groups/950975131702269" rel="noreferrer" data-analytics-event="join_facebook" data-analytics-category="conversion" data-analytics-label="Header">Join Facebook Group</a>
     </header>
 
     <main id="main">
@@ -63,8 +63,8 @@
             A welcoming local group for tabletop players of every level, meeting every Tuesday from 7pm to 11pm upstairs at The Brown Cow in Whitkirk.
           </p>
           <div class="hero-actions" aria-label="Primary actions">
-            <a class="button button-primary" href="https://www.facebook.com/groups/950975131702269" rel="noreferrer">Join the group</a>
-            <a class="button button-secondary" href="#play">What we play</a>
+            <a class="button button-primary" href="https://www.facebook.com/groups/950975131702269" rel="noreferrer" data-analytics-event="join_facebook" data-analytics-category="conversion" data-analytics-label="Hero">Join the group</a>
+            <a class="button button-secondary" href="#play" data-analytics-event="view_what_we_play" data-analytics-category="navigation" data-analytics-label="Hero secondary CTA">What we play</a>
           </div>
         </div>
       </section>
@@ -74,7 +74,7 @@
           <p class="eyebrow">Weekly meetup</p>
           <h2 id="next-session-title">Every Tuesday, 7pm to 11pm, upstairs at The Brown Cow on Selby Road.</h2>
         </div>
-        <a class="button button-light" href="https://www.google.com/maps/search/?api=1&amp;query=The%20Brown%20Cow%20Selby%20Rd%20Whitkirk%20Leeds%20LS15%207AY" rel="noreferrer">Get directions</a>
+        <a class="button button-light" href="https://www.google.com/maps/search/?api=1&amp;query=The%20Brown%20Cow%20Selby%20Rd%20Whitkirk%20Leeds%20LS15%207AY" rel="noreferrer" data-analytics-event="get_directions" data-analytics-category="intent" data-analytics-label="Notice band">Get directions</a>
       </section>
 
       <section class="section intro-section" id="about" aria-labelledby="about-title">
@@ -189,7 +189,7 @@
               Selby Road, Whitkirk<br>
               Leeds LS15 7AY
             </address>
-            <a href="https://www.google.com/maps/search/?api=1&amp;query=The%20Brown%20Cow%20Selby%20Rd%20Whitkirk%20Leeds%20LS15%207AY" rel="noreferrer">Open in maps</a>
+            <a href="https://www.google.com/maps/search/?api=1&amp;query=The%20Brown%20Cow%20Selby%20Rd%20Whitkirk%20Leeds%20LS15%207AY" rel="noreferrer" data-analytics-event="get_directions" data-analytics-category="intent" data-analytics-label="Find us panel">Open in maps</a>
           </article>
           <article class="info-panel">
             <h3>When</h3>
@@ -207,14 +207,14 @@
           <p class="eyebrow">Ready to play?</p>
           <h2 id="cta-title">Join the group and come along on Tuesday night.</h2>
         </div>
-        <a class="button button-primary" href="https://www.facebook.com/groups/950975131702269" rel="noreferrer">Join on Facebook</a>
+        <a class="button button-primary" href="https://www.facebook.com/groups/950975131702269" rel="noreferrer" data-analytics-event="join_facebook" data-analytics-category="conversion" data-analytics-label="Final CTA">Join on Facebook</a>
       </section>
     </main>
 
     <footer class="site-footer">
       <p>&copy; <span data-year></span> East Leeds Board Gamers</p>
       <div class="footer-links">
-        <a href="https://www.facebook.com/groups/950975131702269" rel="noreferrer">Facebook Group</a>
+        <a href="https://www.facebook.com/groups/950975131702269" rel="noreferrer" data-analytics-event="join_facebook" data-analytics-category="conversion" data-analytics-label="Footer">Facebook Group</a>
         <span>Photos from ELBG Tuesday nights</span>
       </div>
     </footer>
@@ -252,6 +252,7 @@
         }
       }
     </script>
+    <script src="analytics.js" data-ga-measurement-id="" defer></script>
     <script src="script.js"></script>
   </body>
 </html>
