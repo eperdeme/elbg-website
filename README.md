@@ -41,12 +41,9 @@ Set these Cloudflare records to **DNS only** at first. GitHub may take a little 
 
 ## Google Analytics
 
-The site is wired for Google Analytics 4, but tracking stays disabled until a real Measurement ID is added.
+The site is wired for Google Analytics 4 with Measurement ID `G-RL24QPF36Y`.
 
-1. Create a GA4 property and web data stream for `https://www.elbg.co.uk/`.
-2. Copy the Measurement ID. It should look like `G-XXXXXXXXXX`.
-3. Add that ID to the `data-ga-measurement-id` attribute on the `analytics.js` script tag in both `index.html` and `404.html`.
-4. Push to `main` and confirm the Pages deployment succeeds.
+If the property ever changes, replace the `data-ga-measurement-id` attribute on the `analytics.js` script tag in both `index.html` and `404.html`, then push to `main` and confirm the Pages deployment succeeds.
 
 The loader sends page views and named events for key actions such as joining the Facebook group, opening directions and returning home from the 404 page. It uses Google Consent Mode with analytics and ad storage denied by default, so it does not set Analytics cookies unless a consent flow is added later.
 
