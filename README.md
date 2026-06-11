@@ -1,13 +1,13 @@
 # East Leeds Board Gamers website
 
-Static website for `elbg.co.uk`, designed to be hosted directly with GitHub Pages.
+Static website for `elbg.co.uk`, designed to be hosted directly with GitHub Pages. The canonical Pages host is `www.elbg.co.uk`, with the apex domain able to redirect there once DNS is configured.
 
 ## Files
 
 - `index.html` contains the page content and metadata.
 - `styles.css` contains the responsive design.
 - `script.js` handles the mobile navigation and footer year.
-- `CNAME` tells GitHub Pages to serve the site at `elbg.co.uk`.
+- `CNAME` tells GitHub Pages to serve the site at `www.elbg.co.uk`.
 - `robots.txt` and `sitemap.xml` are included for basic search engine discovery.
 
 ## Publish on GitHub Pages
@@ -16,12 +16,18 @@ This repository deploys with the workflow in `.github/workflows/deploy-pages.yml
 
 1. Push changes to `main`.
 2. Open the repository on GitHub and go to **Actions** to watch the **Deploy GitHub Pages** workflow.
-3. In **Settings** > **Pages**, keep the custom domain set to `elbg.co.uk`.
+3. In **Settings** > **Pages**, keep the custom domain set to `www.elbg.co.uk`.
 4. After DNS has propagated and GitHub provisions a certificate, enable **Enforce HTTPS**.
 
 ## DNS for `elbg.co.uk`
 
-The domain currently uses Cloudflare nameservers. In Cloudflare DNS, add these `A` records for the root domain:
+The domain currently uses Cloudflare nameservers. In Cloudflare DNS, add this `CNAME` record for the canonical site address:
+
+```text
+www -> eperdeme.github.io
+```
+
+To make `elbg.co.uk` redirect to `www.elbg.co.uk`, add these `A` records for the root domain:
 
 ```text
 185.199.108.153
@@ -30,13 +36,7 @@ The domain currently uses Cloudflare nameservers. In Cloudflare DNS, add these `
 185.199.111.153
 ```
 
-For `www.elbg.co.uk`, add this `CNAME` record if you want the `www` address to redirect to the apex domain:
-
-```text
-www -> eperdeme.github.io
-```
-
-GitHub may take a little while to verify the domain after DNS changes are made.
+Set these Cloudflare records to **DNS only** at first. GitHub may take a little while to verify the domain and issue the HTTPS certificate after DNS changes are made.
 
 ## Content notes
 

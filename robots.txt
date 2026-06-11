@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://elbg.co.uk/sitemap.xml
+Sitemap: https://www.elbg.co.uk/sitemap.xml
