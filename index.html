@@ -6,13 +6,13 @@
     <title>East Leeds Board Gamers | ELBG</title>
     <meta
       name="description"
-      content="East Leeds Board Gamers is a friendly local board game community for new and experienced players. Join the Facebook group for meetups and events."
+      content="East Leeds Board Gamers meets every Tuesday, 7pm to 11pm, upstairs at The Brown Cow on Selby Road in Whitkirk, Leeds. New players are welcome."
     >
     <meta name="theme-color" content="#12312f">
     <meta property="og:title" content="East Leeds Board Gamers">
     <meta
       property="og:description"
-      content="Friendly board game meetups for East Leeds and nearby players. New players are welcome."
+      content="Friendly board game meetups every Tuesday, 7pm to 11pm, upstairs at The Brown Cow in Whitkirk, Leeds."
     >
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.elbg.co.uk/">
@@ -59,7 +59,7 @@
           <p class="eyebrow">Friendly board game meetups in East Leeds</p>
           <h1 id="hero-title">East Leeds Board Gamers</h1>
           <p class="hero-copy">
-            A welcoming local group for tabletop players of every level, from curious first-timers to people with shelves full of games.
+            A welcoming local group for tabletop players of every level, meeting every Tuesday from 7pm to 11pm upstairs at The Brown Cow in Whitkirk.
           </p>
           <div class="hero-actions" aria-label="Primary actions">
             <a class="button button-primary" href="https://www.facebook.com/groups/950975131702269" rel="noreferrer">Join the group</a>
@@ -70,10 +70,10 @@
 
       <section class="notice-band" aria-labelledby="next-session-title">
         <div>
-          <p class="eyebrow">Next meetup</p>
-          <h2 id="next-session-title">Check the Facebook group for the latest date, venue and RSVP.</h2>
+          <p class="eyebrow">Weekly meetup</p>
+          <h2 id="next-session-title">Every Tuesday, 7pm to 11pm, upstairs at The Brown Cow on Selby Road.</h2>
         </div>
-        <a class="button button-light" href="https://www.facebook.com/groups/950975131702269/events" rel="noreferrer">Open events</a>
+        <a class="button button-light" href="https://www.google.com/maps/search/?api=1&amp;query=The%20Brown%20Cow%20Selby%20Rd%20Whitkirk%20Leeds%20LS15%207AY" rel="noreferrer">Get directions</a>
       </section>
 
       <section class="section intro-section" id="about" aria-labelledby="about-title">
@@ -104,8 +104,8 @@
           </article>
           <article class="step-card">
             <span class="step-number">02</span>
-            <h3>Pick an event</h3>
-            <p>Check the latest meetup post for timing, venue details and any RSVP notes.</p>
+            <h3>Come on Tuesday</h3>
+            <p>Meetups run from 7pm to 11pm upstairs at The Brown Cow in Whitkirk.</p>
           </article>
           <article class="step-card">
             <span class="step-number">03</span>
@@ -137,20 +137,25 @@
       <section class="section info-section" id="find-us" aria-labelledby="find-us-title">
         <div class="section-heading compact">
           <p class="eyebrow">Find Us</p>
-          <h2 id="find-us-title">Meetups are coordinated through Facebook.</h2>
+          <h2 id="find-us-title">Every Tuesday upstairs at The Brown Cow.</h2>
         </div>
         <div class="info-grid">
           <article class="info-panel">
             <h3>Where</h3>
-            <p>Based around East Leeds, with current venue details posted in the group event.</p>
+            <address>
+              The Brown Cow, upstairs<br>
+              Selby Road, Whitkirk<br>
+              Leeds LS15 7AY
+            </address>
+            <a href="https://www.google.com/maps/search/?api=1&amp;query=The%20Brown%20Cow%20Selby%20Rd%20Whitkirk%20Leeds%20LS15%207AY" rel="noreferrer">Open in maps</a>
           </article>
           <article class="info-panel">
             <h3>When</h3>
-            <p>Use the Facebook events page for the latest session times and special game days.</p>
+            <p>Every Tuesday from 7pm to 11pm. Check Facebook for occasional updates or special game days.</p>
           </article>
           <article class="info-panel">
-            <h3>Who</h3>
-            <p>Adults, new players, returning hobbyists and people looking for a regular local table.</p>
+            <h3>Group Lead</h3>
+            <p>The group is headed by <a href="https://www.facebook.com/andrew.pidhajeckyj" rel="noreferrer">Andrew Pidhajeckyj</a>.</p>
           </article>
         </div>
       </section>
@@ -158,7 +163,7 @@
       <section class="cta-section" aria-labelledby="cta-title">
         <div>
           <p class="eyebrow">Ready to play?</p>
-          <h2 id="cta-title">Join the group and come along to the next meetup.</h2>
+          <h2 id="cta-title">Join the group and come along on Tuesday night.</h2>
         </div>
         <a class="button button-primary" href="https://www.facebook.com/groups/950975131702269" rel="noreferrer">Join on Facebook</a>
       </section>
@@ -176,7 +181,30 @@
         "name": "East Leeds Board Gamers",
         "alternateName": "ELBG",
         "url": "https://www.elbg.co.uk/",
-        "sameAs": ["https://www.facebook.com/groups/950975131702269"]
+        "sameAs": ["https://www.facebook.com/groups/950975131702269"],
+        "event": {
+          "@type": "Event",
+          "name": "East Leeds Board Gamers weekly meetup",
+          "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+          "eventSchedule": {
+            "@type": "Schedule",
+            "repeatFrequency": "P1W",
+            "byDay": "https://schema.org/Tuesday",
+            "startTime": "19:00",
+            "endTime": "23:00"
+          },
+          "location": {
+            "@type": "Place",
+            "name": "The Brown Cow",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Selby Road, Whitkirk",
+              "addressLocality": "Leeds",
+              "postalCode": "LS15 7AY",
+              "addressCountry": "GB"
+            }
+          }
+        }
       }
     </script>
     <script src="script.js"></script>

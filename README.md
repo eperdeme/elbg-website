@@ -40,4 +40,4 @@ Set these Cloudflare records to **DNS only** at first. GitHub may take a little 
 
 ## Content notes
 
-The Facebook group page is treated as the source of truth for events, venue details and RSVPs. If ELBG has a fixed venue or weekly schedule, update the copy in `index.html` to include it directly.
+The group meets every Tuesday from 7pm to 11pm upstairs at The Brown Cow, Selby Road, Whitkirk, Leeds LS15 7AY. Facebook remains the source of truth for last-minute updates, special events and RSVPs.
