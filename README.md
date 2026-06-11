@@ -12,17 +12,16 @@ Static website for `elbg.co.uk`, designed to be hosted directly with GitHub Page
 
 ## Publish on GitHub Pages
 
-1. Push the repository to GitHub.
-2. Open the repository on GitHub and go to **Settings** > **Pages**.
-3. Under **Build and deployment**, choose **Deploy from a branch**.
-4. Set the branch to `main` and the folder to `/ (root)`.
-5. Save the settings.
-6. In **Custom domain**, enter `elbg.co.uk`.
-7. After DNS has propagated, enable **Enforce HTTPS**.
+This repository deploys with the workflow in `.github/workflows/deploy-pages.yml`.
+
+1. Push changes to `main`.
+2. Open the repository on GitHub and go to **Actions** to watch the **Deploy GitHub Pages** workflow.
+3. In **Settings** > **Pages**, keep the custom domain set to `elbg.co.uk`.
+4. After DNS has propagated and GitHub provisions a certificate, enable **Enforce HTTPS**.
 
 ## DNS for `elbg.co.uk`
 
-At the domain provider, add these `A` records for the root domain:
+The domain currently uses Cloudflare nameservers. In Cloudflare DNS, add these `A` records for the root domain:
 
 ```text
 185.199.108.153
@@ -31,7 +30,7 @@ At the domain provider, add these `A` records for the root domain:
 185.199.111.153
 ```
 
-For `www.elbg.co.uk`, add this `CNAME` record:
+For `www.elbg.co.uk`, add this `CNAME` record if you want the `www` address to redirect to the apex domain:
 
 ```text
 www -> eperdeme.github.io
