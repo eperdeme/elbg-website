@@ -47,6 +47,18 @@ a {
   color: inherit;
 }
 
+:focus-visible {
+  outline: 3px solid var(--teal);
+  outline-offset: 2px;
+}
+
+.hero :focus-visible,
+.notice-band :focus-visible,
+.cta-section :focus-visible,
+.site-footer :focus-visible {
+  outline-color: var(--sun);
+}
+
 .skip-link {
   position: fixed;
   top: 12px;
@@ -137,10 +149,6 @@ a {
   gap: 0.2rem;
 }
 
-.mobile-nav-cta {
-  display: none;
-}
-
 .site-nav a {
   border-radius: 6px;
   padding: 0.55rem 0.8rem;
@@ -151,10 +159,10 @@ a {
 }
 
 .site-nav a:hover,
-.site-nav a:focus-visible {
+.site-nav a:focus-visible,
+.site-nav a[aria-current="true"] {
   background: #eef4ef;
   color: var(--ink);
-  outline: none;
 }
 
 .header-cta {
@@ -170,6 +178,10 @@ a {
   font-weight: 700;
   text-decoration: none;
   white-space: nowrap;
+}
+
+.header-cta-short {
+  display: none;
 }
 
 .nav-toggle {
@@ -288,7 +300,6 @@ h3 {
 .button:hover,
 .button:focus-visible {
   transform: translateY(-1px);
-  outline: none;
 }
 
 .button-primary {
@@ -329,6 +340,12 @@ h3 {
 .notice-band h2 {
   max-width: 820px;
   font-size: clamp(1.35rem, 2vw, 1.8rem);
+}
+
+.notice-next {
+  margin: 0.6rem 0 0;
+  color: var(--sun);
+  font-weight: 700;
 }
 
 .section {
@@ -558,17 +575,31 @@ h3 {
 
 @media (max-width: 900px) {
   .site-header {
-    grid-template-columns: auto auto;
-    justify-content: space-between;
+    grid-template-columns: 1fr auto auto;
+    gap: 0.6rem;
   }
 
   .nav-toggle {
     display: block;
+    order: 3;
   }
 
-  .site-nav,
-  .header-cta {
+  .site-nav {
     display: none;
+  }
+
+  .header-cta {
+    order: 2;
+    min-height: 40px;
+    padding: 0.5rem 0.75rem;
+  }
+
+  .header-cta-long {
+    display: none;
+  }
+
+  .header-cta-short {
+    display: inline;
   }
 
   .site-nav.is-open {
@@ -593,13 +624,6 @@ h3 {
     align-items: center;
     border-radius: 6px;
     padding: 0.65rem 0.75rem;
-  }
-
-  .site-nav.is-open .mobile-nav-cta {
-    justify-content: center;
-    margin-top: 0.35rem;
-    background: var(--ink);
-    color: #ffffff;
   }
 
   .hero {
